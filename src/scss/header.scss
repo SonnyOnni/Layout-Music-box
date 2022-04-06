@@ -80,6 +80,10 @@
 .search-button {
     width: 248px;
     height: 25px;
+    padding-left: 10px;
+    color: $white;
+    font-size: 13px;
+    line-height: 15px;
 
     background: $dark;
     border: none;
@@ -90,13 +94,12 @@
     align-items: center
 }
 
-.search-button-title {
+.search-button::placeholder {
     @include uppercase;
 
     font-family: Arial, sans-serif;
     font-size: 13px;
     line-height: 15px;
-    padding-left: 10px;
 
     color: #757575;
 }
@@ -174,6 +177,7 @@
     border: none;
     border-radius: 5px;
     padding: 20px 30px;
+    cursor: pointer;
 }
 
 .btn-getaccess-title {

@@ -29,6 +29,11 @@ p, ul, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #CACACA;
+}
+
 /* Desktop Version */
 .desktop-h1 {
   font-size: 60px;
@@ -113,6 +118,10 @@ p, ul, h1, h2, h3, h4, h5, h6 {
 .search-button {
   width: 248px;
   height: 25px;
+  padding-left: 10px;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 15px;
   background: #3C3B3D;
   border: none;
   border-radius: 50px;
@@ -121,12 +130,11 @@ p, ul, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.search-button-title {
+.search-button::placeholder {
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   font-size: 13px;
   line-height: 15px;
-  padding-left: 10px;
   color: #757575;
 }
 
@@ -199,6 +207,7 @@ p, ul, h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 5px;
   padding: 20px 30px;
+  cursor: pointer;
 }
 
 .btn-getaccess-title {
