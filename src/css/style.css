@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Roboto Bold';
+    src:url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto', sant-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #cacaca;
+    background-color: #08020d;
+}
+
+/* Desktop Version */
+
+.desktop-h1 {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.desktop-h2 {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Mobile Version */
+
+.mobile-h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mobile-h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
