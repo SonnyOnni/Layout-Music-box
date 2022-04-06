@@ -1,2 +1,2 @@
 # layout-designer-project-lvl2
-Tkachenko Svetlana
+Site: https://sonnyonni.github.io/layout-designer-project-lvl2/src/
