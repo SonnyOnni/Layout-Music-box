@@ -18,43 +18,55 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sant-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: $dark-gray;
     background-color: $black;
+    margin: 0;
+}
+
+p, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 /* Desktop Version */
 
-.desktop-h1 {
-    font-size: 60px;
-    line-height: 90px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    .desktop-h1 {
+        font-size: 60px;
+        line-height: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
 
-.desktop-h2 {
-    font-size: 38px;
-    line-height: 57px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+        color: $white;
+    }
+    
+    .desktop-h2 {
+        font-size: 38px;
+        line-height: 57px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
 
+        color: $white;
+    }
 
 /* Mobile Version */
 
-.mobile-h1 {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.mobile-h2 {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 700;
-    text-transform: uppercase;
+@media (max-width: 576px) {
+    .desktop-h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    
+    .desktop-h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }    
 }

@@ -12,12 +12,21 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Roboto", sant-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #CACACA;
   background-color: #08020D;
+  margin: 0;
+}
+
+p, ul, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 /* Desktop Version */
@@ -26,6 +35,8 @@ body {
   line-height: 90px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .desktop-h2 {
@@ -33,21 +44,221 @@ body {
   line-height: 57px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* Mobile Version */
-.mobile-h1 {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 700;
+@media (max-width: 576px) {
+  .desktop-h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .desktop-h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+/*HEADER*/
+/*Desktop version*/
+#page-description {
+  height: 750px;
+}
+
+.menu-block, .logo-section, .navigation-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 100px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  line-height: 16.5px;
   text-transform: uppercase;
 }
 
-.mobile-h2 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
+.menu-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: 119px;
+  margin-right: 121px;
+  margin-top: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo-title {
+  margin-left: 16px;
+  margin-right: 90px;
+}
+
+.navigation-item-title {
+  margin-right: 24px;
+}
+.navigation-item-title:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.navigation-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.search-button {
+  width: 248px;
+  height: 25px;
+  background: #3C3B3D;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-button-title {
   text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  padding-left: 10px;
+  color: #757575;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.main-header::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("../images/banner 1.png");
+  background-position: center;
+  background-size: cover;
+  content: " ";
+}
+
+.header-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 31px;
+  margin-bottom: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.registration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 1 131px;
+  flex-wrap: wrap;
+  max-width: 570px;
+}
+
+.registration-input {
+  min-width: 270px;
+  min-height: 50px;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.registration-input::placeholder {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.btn-getaccess {
+  width: 570px;
+  height: 57px;
+  background: #34C176;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.btn-getaccess-title {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/*Mobile version*/
+@media (max-width: 576px) {
+  .menu-block, .main-header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .menu-block, .logo-section, .navigation-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 100px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 16.5px;
+  }
+
+  .logo-section {
+    margin-bottom: 18px;
+  }
+
+  .logo {
+    margin-bottom: 17px;
+  }
+
+  .navigation-item-title {
+    font-weight: bold;
+  }
+
+  .search-button, .search-button-section {
+    width: 100%;
+  }
+
+  .main-header {
+    padding-top: 250px;
+  }
+
+  .registration {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .registration-input, .btn-getaccess {
+    width: 100%;
+  }
+
+  .header-description {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
