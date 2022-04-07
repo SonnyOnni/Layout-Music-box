@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Bold"), local("Roboto-Bold"), url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
@@ -32,6 +33,13 @@ p, ul, h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #CACACA;
+}
+
+.main-description {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* Desktop Version */
@@ -69,6 +77,19 @@ a {
 /*Desktop version*/
 #page-description {
   height: 750px;
+}
+#page-description::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 750px;
+  z-index: -1;
+  background-image: url("../images/banner 1.png");
+  background-position: center;
+  background-size: cover;
+  content: " ";
 }
 
 .menu-block, .logo-section, .navigation-items {
@@ -129,7 +150,6 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
-
 .search-button::placeholder {
   text-transform: uppercase;
   font-family: Arial, sans-serif;
@@ -146,26 +166,10 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.main-header::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background-image: url("../images/banner 1.png");
-  background-position: center;
-  background-size: cover;
-  content: " ";
-}
 
 .header-description {
-  font-size: 16px;
-  line-height: 24px;
   margin-top: 31px;
   margin-bottom: 17px;
-  text-align: center;
-  color: #FFFFFF;
 }
 
 .registration {
@@ -177,13 +181,16 @@ a {
   max-width: 570px;
 }
 
-.registration-input {
-  min-width: 270px;
-  min-height: 50px;
+.btn-transparent {
   border: 2px solid #CACACA;
   border-radius: 3px;
   background-color: transparent;
   color: #FFFFFF;
+}
+
+.registration-input {
+  min-width: 270px;
+  min-height: 50px;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -267,6 +274,239 @@ a {
   .header-description {
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+}
+.pricing-value-first {
+  margin-top: 200px;
+  line-height: 1em;
+}
+.pricing-value-first::before {
+  font-size: 64px;
+  line-height: 100%;
+  color: #FFFFFF;
+  content: "0";
+}
+
+.pricing-footer-first {
+  text-align: center;
+}
+.pricing-footer-first::before {
+  font-size: 12.8px;
+  line-height: 150%;
+  color: #FFFFFF;
+  content: "Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама";
+}
+
+.pricing-value-second {
+  margin-top: 200px;
+  line-height: 1em;
+}
+.pricing-value-second::before {
+  font-size: 64px;
+  line-height: 100%;
+  color: #FFFFFF;
+  content: "250";
+}
+
+.pricing-footer-second {
+  text-align: center;
+}
+.pricing-footer-second::before {
+  font-size: 12.8px;
+  line-height: 150%;
+  color: #FFFFFF;
+  content: "Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве";
+}
+
+.pricing-value-third {
+  margin-top: 200px;
+  line-height: 1em;
+}
+.pricing-value-third::before {
+  font-size: 64px;
+  line-height: 100%;
+  color: #FFFFFF;
+  content: "500";
+}
+
+.pricing-footer-third {
+  text-align: center;
+}
+.pricing-footer-third::before {
+  font-size: 12.8px;
+  line-height: 150%;
+  color: #FFFFFF;
+  content: "Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве";
+}
+
+/*Pricing Section*/
+#page-pricing {
+  max-height: 908px;
+  padding-top: 100px;
+}
+
+.pricing {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.pricing-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 1 1200px;
+  flex-wrap: nowrap;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 615px;
+  margin-right: 50px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pricing-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.bg-free {
+  position: relative;
+}
+.bg-free::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 750px;
+  z-index: -1;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  content: " ";
+}
+.bg-free::before {
+  background-image: url("../images/Free Bg.png");
+}
+
+.bg-standart {
+  position: relative;
+}
+.bg-standart::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 750px;
+  z-index: -1;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  content: " ";
+}
+.bg-standart::before {
+  background-image: url("../images/Standart Bg.png");
+}
+
+.bg-premium {
+  position: relative;
+}
+.bg-premium::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 750px;
+  z-index: -1;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  content: " ";
+}
+.bg-premium::before {
+  background-image: url("../images/Premium Bg.png");
+}
+
+.pricing-section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.pricing-section-description {
+  margin-top: 43px;
+}
+
+.pricing-item-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.pricing-value {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.money-value {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+
+.apply-btn {
+  text-transform: uppercase;
+  width: 319px;
+  height: 66px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+/*Laptop version*/
+@media (max-width: 1240px) {
+  .pricing-items {
+    flex-wrap: wrap;
+  }
+
+  .pricing-item {
+    margin-bottom: 28px;
+  }
+
+  .pricing-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+/*Mobile version*/
+@media (max-width: 576px) {
+  .pricing {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .pricing-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-item {
+    margin-right: 0;
   }
 }
 

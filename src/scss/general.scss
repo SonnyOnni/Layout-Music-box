@@ -40,6 +40,25 @@ a {
     color: $dark-gray;
 }
 
+.main-description {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: $white;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
 /* Desktop Version */
 
     .desktop-h1 {
