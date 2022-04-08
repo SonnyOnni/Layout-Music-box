@@ -49,8 +49,6 @@
 /*Pricing Section*/
 
 #page-pricing {
-    max-height: 908px;
-
     padding-top: 100px;
 }
 
@@ -192,7 +190,7 @@
 
 /*Mobile version*/
 
-@media (max-width: 576px) {
+@media (max-width: 1050px) {
     .pricing {
         margin-right: 20px;
         margin-left: 20px;

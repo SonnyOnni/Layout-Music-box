@@ -40,11 +40,22 @@ a {
     color: $dark-gray;
 }
 
+/*Главный стиль для p*/
+
 .main-description {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
 
+    color: $white;
+}
+
+/*Главный стиль для btn*/
+
+.btn-transparent {
+    border: 2px solid #CACACA;
+    border-radius: 3px;
+    background-color: transparent;
     color: $white;
 }
 
