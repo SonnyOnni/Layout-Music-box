@@ -50,9 +50,6 @@
 
 #page-pricing {
     padding-top: 100px;
-}
-
-.pricing {
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -191,7 +188,7 @@
 /*Mobile version*/
 
 @media (max-width: 1050px) {
-    .pricing {
+    #page-pricing {
         margin-right: 20px;
         margin-left: 20px;
     }
