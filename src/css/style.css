@@ -505,7 +505,12 @@ a {
   }
 
   .pricing-item {
+    width: 100%;
     margin-right: 0;
+  }
+
+  .apply-btn {
+    width: 100%;
   }
 }
 .news-body-first h3::before {
@@ -655,6 +660,11 @@ a {
   .news-picture {
     max-width: 374px;
     align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .news-picture {
+    max-width: 200px;
   }
 }
 #page-app {
