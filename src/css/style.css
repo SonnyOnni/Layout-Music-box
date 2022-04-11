@@ -925,5 +925,68 @@ a {
     margin-top: 25px;
   }
 }
+#page-popular-track {
+  padding-top: 100px;
+  padding-left: 120px;
+  padding-right: 169px;
+}
+
+.popular-track-title {
+  text-align: start;
+  margin-bottom: 48px;
+}
+
+.popular-track-section {
+  display: grid;
+  grid-template-areas: "section section" "section section" "section section";
+  gap: 25px 50px;
+}
+.popular-track-section .popular-track {
+  grid-area: "section";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 551px;
+}
+.popular-track-section .image-album {
+  width: 55px;
+  height: 55px;
+}
+.popular-track-section .track-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 15px;
+}
+.popular-track-section .track-info .track-title .track-song-name {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.popular-track-section .track-info .track-title .track-song-name, .popular-track-section .track-info .track-title .track-song-artist {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  color: #FFFFFF;
+}
+.popular-track-section .track-info .track-song-time {
+  font-size: 12.8px;
+  line-height: 150%;
+  color: #E0E0E0;
+}
+
+/*Mobile version*/
+@media (max-width: 768px) {
+  #page-popular-track {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .popular-track-section {
+    display: grid;
+    grid-template-areas: "section";
+    gap: 25px 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
