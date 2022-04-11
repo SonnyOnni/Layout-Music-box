@@ -23,7 +23,7 @@
 }
 
 /*Desktop version*/
-#page-description {
+.header-main-background {
     height: 750px;
 
     &::before {
@@ -172,6 +172,17 @@
 
 /*Mobile version*/
 
+
+@media (max-width: 1040px) {
+    .logo-section {
+        margin-bottom: 18px;
+    }
+
+    .logo {
+        margin-bottom: 17px;
+    }
+}
+
 @media (max-width: 576px) {
     .menu-block, .main-header {
         margin-left: 20px;
@@ -180,14 +191,6 @@
 
     .menu-block, .logo-section, .navigation-items {
         @include vertical-menu;
-    }
-
-    .logo-section {
-        margin-bottom: 18px;
-    }
-
-    .logo {
-        margin-bottom: 17px;
     }
 
     .navigation-item-title {
