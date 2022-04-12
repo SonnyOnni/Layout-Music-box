@@ -1083,17 +1083,25 @@ a {
 .page-similar {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
 }
 
 #page-similar {
   width: 1200px;
+  padding-top: 100px;
+  padding-left: 20px;
 }
 
+.grid-4 {
+  padding-right: 20px;
+}
 .grid-4 .similar-item {
   grid-area: "album";
   text-align: center;
   color: #FFFFFF;
+}
+.grid-4 .similar-item .similar-info {
+  width: 250px;
+  margin-top: 16px;
 }
 .grid-4 .similar-item .similar-info .similar-name {
   font-size: 18px;
@@ -1119,7 +1127,7 @@ a {
   .similar-item .discography-album {
     width: 137px;
     height: 137px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 }
 
