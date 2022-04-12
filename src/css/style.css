@@ -1092,9 +1092,6 @@ a {
   text-align: center;
   color: #FFFFFF;
 }
-.grid-4 .similar-item .round-image {
-  border-radius: 50%;
-}
 .grid-4 .similar-item .similar-info .similar-name {
   font-size: 18px;
   line-height: 27px;
