@@ -1,0 +1,76 @@
+#page-discography {
+    @include flex-center;
+
+    padding-top: 100px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-areas: "album album album album" "album album album album";
+    gap: 25px 50px;
+
+    & .discography-item {
+        grid-area: "album";
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        & .discography-album {
+            width: 250px;
+            height: 250px;
+
+            margin-bottom: 18px;
+        }
+
+        & .discography-info {
+
+            color: $white;
+
+            & .discography-name {
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 700;
+            }
+
+            & .discography-year {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/*Mobile version*/
+
+@media (max-width: 1240px) {
+    .grid-4 {
+        grid-template-areas: "album album album" "album album album";
+    }
+
+    #page-discography {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .grid-4 {
+        grid-template-areas: "album album" "album album" "album album";
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-4 {
+    
+        & .discography-item {
+    
+            & .discography-album {
+                width: 137px;
+                height: 137px;
+            }
+        }
+    }
+}
+

@@ -52,6 +52,10 @@ a {
   color: #FFFFFF;
 }
 
+.wrapper {
+  width: 1200px;
+}
+
 /* Desktop Version */
 .desktop-h1 {
   font-size: 60px;
@@ -345,16 +349,15 @@ a {
 
 /*Pricing Section*/
 #page-pricing {
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
-  margin-left: 120px;
-  margin-right: 120px;
 }
 
 .pricing-items {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex: 1 1 1200px;
   flex-wrap: nowrap;
 }
 
@@ -493,11 +496,6 @@ a {
 }
 /*Mobile version*/
 @media (max-width: 1050px) {
-  #page-pricing {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
   .pricing-items {
     display: flex;
     flex-direction: column;
@@ -506,12 +504,22 @@ a {
   }
 
   .pricing-item {
-    width: 100%;
     margin-right: 0;
   }
 
   .apply-btn {
     width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #page-pricing {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .pricing-item {
+    width: 100%;
+    max-width: 370px;
   }
 }
 .news-body-first h3::before {
@@ -529,9 +537,9 @@ a {
 }
 
 #page-news {
-  margin-top: 100px;
-  margin-left: 120px;
-  margin-right: 120px;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
 
 .main-news-title {
@@ -669,8 +677,9 @@ a {
   }
 }
 #page-app {
-  max-width: 1200px;
-  margin: 100px 120px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
 }
 
 .page-app-title {
@@ -745,10 +754,10 @@ a {
 }
 
 #footer {
+  display: flex;
+  justify-content: center;
   padding-top: 62px;
   padding-bottom: 2rem;
-  padding-left: 120px;
-  padding-right: 120px;
   position: relative;
 }
 
@@ -926,9 +935,9 @@ a {
   }
 }
 #page-popular-track {
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
-  padding-left: 120px;
-  padding-right: 169px;
 }
 
 .popular-track-title {
@@ -976,16 +985,74 @@ a {
 }
 
 /*Mobile version*/
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
   #page-popular-track {
     padding-left: 20px;
     padding-right: 20px;
   }
-
+}
+@media (max-width: 900px) {
   .popular-track-section {
     display: grid;
     grid-template-areas: "section";
     gap: 25px 0;
+  }
+}
+#page-discography {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-areas: "album album album album" "album album album album";
+  gap: 25px 50px;
+}
+.grid-4 .discography-item {
+  grid-area: "album";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.grid-4 .discography-item .discography-album {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 18px;
+}
+.grid-4 .discography-item .discography-info {
+  color: #FFFFFF;
+}
+.grid-4 .discography-item .discography-info .discography-name {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.grid-4 .discography-item .discography-info .discography-year {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Mobile version*/
+@media (max-width: 1240px) {
+  .grid-4 {
+    grid-template-areas: "album album album" "album album album";
+  }
+
+  #page-discography {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .grid-4 {
+    grid-template-areas: "album album" "album album" "album album";
+  }
+}
+@media (max-width: 576px) {
+  .grid-4 .discography-item .discography-album {
+    width: 137px;
+    height: 137px;
   }
 }
 

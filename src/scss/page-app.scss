@@ -1,6 +1,6 @@
 #page-app {
-    max-width: 1200px;
-    margin: 100px 120px;
+    @include flex-center;
+    padding: 100px 0;
 }
 
 .page-app-title {

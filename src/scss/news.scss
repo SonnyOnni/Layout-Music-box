@@ -17,9 +17,9 @@
 }
 
 #page-news {
-    margin-top: 100px;
-    margin-left: 120px;
-    margin-right: 120px;
+    @include flex-center;
+
+    padding-top: 100px;
 }
 
 .main-news-title {

@@ -1,7 +1,7 @@
 #page-popular-track {
+    @include flex-center;
+    
     padding-top: 100px;
-    padding-left: 120px;
-    padding-right: 169px;
 }
 
 .popular-track-title {
@@ -62,11 +62,14 @@
 
 /*Mobile version*/
 
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
     #page-popular-track {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+@media (max-width: 900px) {
 
     .popular-track-section {
         display: grid;

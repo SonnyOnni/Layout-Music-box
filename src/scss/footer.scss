@@ -3,10 +3,10 @@
 }
 
 #footer {
+    @include flex-center;
+    
     padding-top: 62px;
     padding-bottom: 2rem;
-    padding-left: 120px;
-    padding-right: 120px;
 
     position: relative;
 }
