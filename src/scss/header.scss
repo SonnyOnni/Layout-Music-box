@@ -25,7 +25,7 @@
 /*Desktop version*/
 .header-main-background {
     height: 750px;
-
+/*
     &::before {
         position: absolute;
         top: 0;
@@ -42,6 +42,7 @@
     
         content: " ";
     }
+    */
 }
 
 .menu-block, .logo-section, .navigation-items {
@@ -217,5 +218,15 @@
     .header-description {
         margin-top: 16px;
         margin-bottom: 16px;
+    }
+
+    .navigation-items {
+        & li {
+            width: 85px;
+        }
+    }
+
+    .navigation-item-title {
+        margin-right: 0;
     }
 }
