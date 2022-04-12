@@ -1,7 +1,9 @@
 #page-discography {
-    @include flex-center;
+    display: flex;
+    justify-content: flex-start;
 
     padding-top: 100px;
+    padding-left: 120px;
 }
 
 .grid-4 {
@@ -15,6 +17,8 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        width: 250px;
 
         & .discography-album {
             width: 250px;

@@ -1000,8 +1000,9 @@ a {
 }
 #page-discography {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 100px;
+  padding-left: 120px;
 }
 
 .grid-4 {
@@ -1014,6 +1015,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 250px;
 }
 .grid-4 .discography-item .discography-album {
   width: 250px;
