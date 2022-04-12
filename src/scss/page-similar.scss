@@ -58,12 +58,20 @@
         & .discography-album {
             width: 137px;
             height: 137px;
-
-            margin-bottom: 16px;
         }
 
         & .similar-info {
             width: 137px;
+
+            & .similar-name {
+                width: 137px;
+                height: 27px;
+            }
+
+            & .similar-followers {
+                width: 137px;
+                height: 48px;
+            }
         }
     }
 }

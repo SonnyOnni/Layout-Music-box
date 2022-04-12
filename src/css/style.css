@@ -950,10 +950,17 @@ a {
     margin-right: 0;
   }
 }
-#page-popular-track {
+.page-popular-track {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+
+#page-popular-track {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1200px;
 }
 
 .popular-track-title {
@@ -965,6 +972,7 @@ a {
   display: grid;
   grid-template-areas: "section section" "section section" "section section";
   gap: 25px 50px;
+  padding-right: 50px;
 }
 .popular-track-section .popular-track {
   grid-area: "section";
@@ -1131,10 +1139,17 @@ a {
   .grid-4 .similar-item .discography-album {
     width: 137px;
     height: 137px;
-    margin-bottom: 16px;
   }
   .grid-4 .similar-item .similar-info {
     width: 137px;
+  }
+  .grid-4 .similar-item .similar-info .similar-name {
+    width: 137px;
+    height: 27px;
+  }
+  .grid-4 .similar-item .similar-info .similar-followers {
+    width: 137px;
+    height: 48px;
   }
 }
 

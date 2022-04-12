@@ -1,7 +1,14 @@
-#page-popular-track {
+.page-popular-track {
     @include flex-center;
     
     padding-top: 100px;
+}
+
+#page-popular-track {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1200px;
 }
 
 .popular-track-title {
@@ -13,6 +20,7 @@
     display: grid;
     grid-template-areas: "section section" "section section" "section section";
     gap: 25px 50px;
+    padding-right: 50px;
 
     & .popular-track {
         grid-area: "section";
