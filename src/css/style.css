@@ -1060,6 +1060,9 @@ a {
     width: 137px;
     height: 137px;
   }
+  .grid-4 .discography-item .discography-info .discography-name {
+    font-size: 16px;
+  }
 }
 #page-similar {
   display: flex;
