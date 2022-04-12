@@ -1050,6 +1050,12 @@ a {
   }
 }
 @media (max-width: 576px) {
+  .grid-4 {
+    padding-right: 50px;
+  }
+  .grid-4 .discography-item {
+    width: 137px;
+  }
   .grid-4 .discography-item .discography-album {
     width: 137px;
     height: 137px;

@@ -64,8 +64,10 @@
 
 @media (max-width: 576px) {
     .grid-4 {
+        padding-right: 50px;
     
         & .discography-item {
+            width: 137px;
     
             & .discography-album {
                 width: 137px;
