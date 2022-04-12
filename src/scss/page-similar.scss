@@ -1,8 +1,11 @@
-#page-similar {
+.page-similar {
     @include flex-center;
 
     padding-top: 100px;
-    padding-bottom: 100px;
+}
+
+#page-similar {
+    width: 1200px;
 }
 
 .grid-4 {
@@ -45,6 +48,8 @@
         & .discography-album {
             width: 137px;
             height: 137px;
+
+            margin-bottom: 18px;
         }
     }
 }
