@@ -1089,6 +1089,7 @@ a {
   width: 1200px;
   padding-top: 100px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .grid-4 {
@@ -1101,7 +1102,7 @@ a {
 }
 .grid-4 .similar-item .similar-info {
   width: 250px;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .grid-4 .similar-item .similar-info .similar-name {
   font-size: 18px;
@@ -1121,13 +1122,19 @@ a {
   }
 }
 @media (max-width: 576px) {
-  .similar-item {
+  .grid-4 {
+    padding-right: 50px;
+  }
+  .grid-4 .similar-item {
     width: 137px;
   }
-  .similar-item .discography-album {
+  .grid-4 .similar-item .discography-album {
     width: 137px;
     height: 137px;
     margin-bottom: 16px;
+  }
+  .grid-4 .similar-item .similar-info {
+    width: 137px;
   }
 }
 
