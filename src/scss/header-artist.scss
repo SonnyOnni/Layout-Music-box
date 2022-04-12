@@ -20,6 +20,10 @@
     }
 }
 
+.image-btn {
+    margin-right: 16px;
+}
+
 .artist-header {
 
     & .artist-header-title {
@@ -50,16 +54,14 @@
             border: none;
 
             cursor: pointer;
+        }
 
-            & .btn-header-description {
-                @include uppercase;
+        & .btn-header-description {
+            @include uppercase;
 
-                margin-left: 16px;
-
-                font-size: 12.8px; 
-                line-height: 150%;
-                color: $white;
-            }
+            font-size: 12.8px; 
+            line-height: 150%;
+            color: $white;
         }
 
         & .btn-purple {
@@ -104,5 +106,15 @@
         & .artist-header-title {
             margin-top: 25px;
         }
+    }
+
+    .navigation-items {
+        & li {
+            width: 100px;
+        }
+    }
+
+    .navigation-item-title {
+        margin-right: 0;
     }
 }

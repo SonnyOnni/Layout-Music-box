@@ -874,6 +874,10 @@ a {
   content: " ";
 }
 
+.image-btn {
+  margin-right: 16px;
+}
+
 .artist-header .artist-header-title {
   margin-top: 50px;
   text-align: start;
@@ -900,9 +904,8 @@ a {
   border: none;
   cursor: pointer;
 }
-.artist-header .btn-section .btn .btn-header-description {
+.artist-header .btn-section .btn-header-description {
   text-transform: uppercase;
-  margin-left: 16px;
   font-size: 12.8px;
   line-height: 150%;
   color: #FFFFFF;
@@ -932,6 +935,14 @@ a {
 
   .artist-header .artist-header-title {
     margin-top: 25px;
+  }
+
+  .navigation-items li {
+    width: 100px;
+  }
+
+  .navigation-item-title {
+    margin-right: 0;
   }
 }
 #page-popular-track {
