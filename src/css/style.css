@@ -1055,5 +1055,46 @@ a {
     height: 137px;
   }
 }
+#page-similar {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.grid-4 .similar-item {
+  grid-area: "album";
+  text-align: center;
+  color: #FFFFFF;
+}
+.grid-4 .similar-item .round-image {
+  border-radius: 50%;
+}
+.grid-4 .similar-item .similar-info .similar-name {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.grid-4 .similar-item .similar-info .similar-followers {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/*Mobile version*/
+@media (max-width: 1240px) {
+  #page-similar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .similar-item {
+    width: 137px;
+  }
+  .similar-item .discography-album {
+    width: 137px;
+    height: 137px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
