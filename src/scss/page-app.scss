@@ -30,11 +30,12 @@
 .page-app-description {
     max-width: 600px;
     text-align: start;
-    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .btn-download {
     display: block;
+    margin-top: 16px;
     padding: 16px 40px;
     width: 131px;
     height: 53px;
@@ -78,10 +79,13 @@
     .page-app-image {
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 16px;
     }
 
     .page-app-description {
         width: 374px;
+    }
+
+    .page-app-description:nth-child(1) {
+        height: 92px;
     }
 }    
