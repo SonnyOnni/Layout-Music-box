@@ -403,7 +403,7 @@ a {
 */
 .pricing-section-title {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 }
 
 .pricing-section-description {
@@ -473,10 +473,12 @@ a {
 
   .pricing-item {
     margin-right: 0;
+    height: 621px;
   }
 
   .apply-btn {
     width: 100%;
+    margin-bottom: 54px;
   }
 }
 @media (max-width: 576px) {
