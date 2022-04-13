@@ -185,7 +185,7 @@
     .pricing-items {
         @include flex-column-center;
 
-        gap: 40px;
+        gap: 30px;
 
         padding-left: 0;
         padding-right: 0;
@@ -193,7 +193,6 @@
 
     .pricing-item {
         margin-right: 0;
-        height: 621px;
     }
 
     .apply-btn {
