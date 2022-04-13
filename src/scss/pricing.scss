@@ -185,6 +185,8 @@
     .pricing-items {
         @include flex-column-center;
 
+        gap: 40px;
+
         padding-left: 0;
         padding-right: 0;
     }
@@ -196,7 +198,7 @@
 
     .apply-btn {
         width: 100%;
-        margin-bottom: 54px;
+        margin-bottom: 64px;
     }
 }
 

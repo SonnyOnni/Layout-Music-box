@@ -467,6 +467,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -478,7 +479,7 @@ a {
 
   .apply-btn {
     width: 100%;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
   }
 }
 @media (max-width: 576px) {
