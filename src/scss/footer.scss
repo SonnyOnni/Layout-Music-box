@@ -96,6 +96,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .header-main-background {
+        height: 853px;
+    }
+    
     #footer {
         padding-left: 20px;
         padding-right: 20px;
@@ -103,10 +108,11 @@
 
     .footer-menu {
         grid-column: span 6;
+        margin-bottom: 30px;
     }
 
     .line {
-        top: 810px;
+        top: 650px;
     }
 
     .footer-menu-bottom {
