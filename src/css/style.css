@@ -301,74 +301,32 @@ a {
     margin-right: 0;
   }
 }
-.pricing-value-first {
+.pricing-value {
   margin-top: 200px;
   line-height: 1em;
-}
-.pricing-value-first::before {
   font-size: 64px;
   line-height: 100%;
   color: #FFFFFF;
-  content: "0";
 }
 
-.pricing-footer-first {
+.pricing-footer {
   text-align: center;
-}
-.pricing-footer-first::before {
   font-size: 12.8px;
   line-height: 150%;
   color: #FFFFFF;
-  content: "Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама";
-}
-
-.pricing-value-second {
-  margin-top: 200px;
-  line-height: 1em;
-}
-.pricing-value-second::before {
-  font-size: 64px;
-  line-height: 100%;
-  color: #FFFFFF;
-  content: "250";
-}
-
-.pricing-footer-second {
-  text-align: center;
-}
-.pricing-footer-second::before {
-  font-size: 12.8px;
-  line-height: 150%;
-  color: #FFFFFF;
-  content: "Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве";
-}
-
-.pricing-value-third {
-  margin-top: 200px;
-  line-height: 1em;
-}
-.pricing-value-third::before {
-  font-size: 64px;
-  line-height: 100%;
-  color: #FFFFFF;
-  content: "500";
-}
-
-.pricing-footer-third {
-  text-align: center;
-}
-.pricing-footer-third::before {
-  font-size: 12.8px;
-  line-height: 150%;
-  color: #FFFFFF;
-  content: "Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве";
 }
 
 /*Pricing Section*/
-#page-pricing {
+.page-pricing {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+
+#page-pricing {
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pricing-items {
@@ -394,66 +352,53 @@ a {
   margin-right: 0;
 }
 
+/*
+
+@mixin card-background {
+    position: relative;
+
+    &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 750px;
+
+    z-index: -1;
+    border-radius: 1rem;
+
+    background-position: center;
+    background-size: cover;
+
+    content: " ";
+    }
+}
+
 .bg-free {
-  position: relative;
-}
-.bg-free::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-height: 750px;
-  z-index: -1;
-  border-radius: 1rem;
-  background-position: center;
-  background-size: cover;
-  content: " ";
-}
-.bg-free::before {
-  background-image: url("../images/Free Bg.png");
+    @include card-background;
+
+    &::before {
+    background-image: url('../images/Free\ Bg.png');
+    }
 }
 
 .bg-standart {
-  position: relative;
-}
-.bg-standart::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-height: 750px;
-  z-index: -1;
-  border-radius: 1rem;
-  background-position: center;
-  background-size: cover;
-  content: " ";
-}
-.bg-standart::before {
-  background-image: url("../images/Standart Bg.png");
+    @include card-background;
+
+    &::before {
+    background-image: url('../images/Standart\ Bg.png');
+    }
 }
 
 .bg-premium {
-  position: relative;
-}
-.bg-premium::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-height: 750px;
-  z-index: -1;
-  border-radius: 1rem;
-  background-position: center;
-  background-size: cover;
-  content: " ";
-}
-.bg-premium::before {
-  background-image: url("../images/Premium Bg.png");
-}
+    @include card-background;
 
+    &::before {
+    background-image: url('../images/Premium\ Bg.png');
+    }
+}
+*/
 .pricing-section-title {
   text-align: center;
   margin-bottom: 45px;
@@ -469,11 +414,15 @@ a {
   font-size: 24px;
   line-height: 36px;
   color: #FFFFFF;
+  align-self: stretch;
+  text-align: center;
 }
 
 .pricing-value {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  text-align: center;
 }
 
 .money-value {
@@ -553,10 +502,16 @@ a {
   content: "Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box";
 }
 
-#page-news {
+.page-news {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+
+#page-news {
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-news-title {
@@ -693,10 +648,16 @@ a {
     max-width: 300px;
   }
 }
-#page-app {
+.page-app {
   display: flex;
   justify-content: center;
   padding: 100px 0;
+}
+
+#page-app {
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-app-title {
@@ -718,10 +679,11 @@ a {
 .page-app-description {
   max-width: 600px;
   text-align: start;
+  margin-bottom: 16px;
 }
 
 .btn-download {
-  margin-top: 16px;
+  display: block;
   padding: 16px 40px;
   width: 131px;
   height: 53px;
@@ -861,6 +823,7 @@ a {
   #footer {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 32px;
   }
 
   .footer-menu {
@@ -869,7 +832,7 @@ a {
   }
 
   .line {
-    top: 700px;
+    top: 680px;
   }
 
   .footer-menu-bottom {

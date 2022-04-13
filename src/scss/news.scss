@@ -16,10 +16,16 @@
     @include news-item ("Ordinary Man", "Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box")
 }
 
-#page-news {
+.page-news {
     @include flex-center;
 
     padding-top: 100px;
+}
+
+#page-news {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main-news-title {

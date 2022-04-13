@@ -1,57 +1,38 @@
-@mixin pricing($pricing-value) {
+@mixin pricing {
     margin-top: 200px;
     line-height: 1em;
-
-    &::before {
-        font-size: 64px;
-        line-height: 100%;
-        color: $white;
-
-        content: "#{$pricing-value}";
-    }
+    font-size: 64px;
+    line-height: 100%;
+    color: $white;
 }
 
-@mixin pricing-footer($pricing-footer) {
+@mixin pricing-footer {
     text-align: center;
-
-    &::before {
-        font-size: 12.8px;
-        line-height: 150%; 
-        color: $white;
-
-        content: "#{$pricing-footer}";
-    }    
+    font-size: 12.8px;
+    line-height: 150%; 
+    color: $white;
 }
 
-.pricing-value-first {
-    @include pricing("0")
+.pricing-value {
+    @include pricing;
 }
 
-.pricing-footer-first {
-    @include pricing-footer("Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама")
-}
-
-.pricing-value-second {
-    @include pricing("250")
-}
-
-.pricing-footer-second {
-    @include pricing-footer("Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве")
-}
-
-.pricing-value-third {
-    @include pricing("500")
-}
-.pricing-footer-third {
-    @include pricing-footer("Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве")
+.pricing-footer {
+    @include pricing-footer;
 }
 
 /*Pricing Section*/
 
-#page-pricing {
+.page-pricing {
     @include flex-center;
 
     padding-top: 100px;
+}
+
+#page-pricing {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .pricing-items {
@@ -74,6 +55,8 @@
 .pricing-item:nth-child(3){
     margin-right: 0;
 }
+
+/*
 
 @mixin card-background {
     position: relative;
@@ -119,6 +102,7 @@
     background-image: url('../images/Premium\ Bg.png');
     }
 }
+*/
 
 .pricing-section-title {
     text-align: center;
@@ -137,11 +121,17 @@
     line-height: 36px;
 
     color: $white;
+
+    align-self: stretch;
+    text-align: center;
 }
 
 .pricing-value {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+
+    align-self: stretch;
+    text-align: center;
 }
 
 .money-value {

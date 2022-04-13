@@ -1,6 +1,12 @@
-#page-app {
+.page-app {
     @include flex-center;
     padding: 100px 0;
+}
+
+#page-app {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .page-app-title {
@@ -22,10 +28,11 @@
 .page-app-description {
     max-width: 600px;
     text-align: start;
+    margin-bottom: 16px;
 }
 
 .btn-download {
-    margin-top: 16px;
+    display: block;
     padding: 16px 40px;
     width: 131px;
     height: 53px;
