@@ -18,14 +18,13 @@
 
 .page-news {
     @include flex-center;
-
-    padding-top: 100px;
 }
 
 #page-news {
     width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 100px;
 }
 
 .main-news-title {
@@ -142,10 +141,6 @@
 /* Mobile Version */ 
 
 @media (max-width: 768px) {
-    #page-news {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
     .new-title {
         font-size: 16px;
@@ -157,6 +152,10 @@
     .news-picture {
         max-width: 500px;
         align-self: center;
+    }
+
+    .second-new {
+        margin-top: 55px;
     }
 
 }

@@ -320,11 +320,11 @@ a {
 .page-pricing {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
 }
 
 #page-pricing {
   width: 1200px;
+  padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -487,6 +487,11 @@ a {
     width: 100%;
     max-width: 370px;
   }
+
+  .pricing-item-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .news-body-first h3::before {
   content: "Music to Be Murdered By";
@@ -505,13 +510,13 @@ a {
 .page-news {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
 }
 
 #page-news {
   width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 100px;
 }
 
 .main-news-title {
@@ -620,11 +625,6 @@ a {
 }
 /* Mobile Version */
 @media (max-width: 768px) {
-  #page-news {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   .new-title {
     font-size: 16px;
     line-height: 24px;
@@ -635,6 +635,10 @@ a {
   .news-picture {
     max-width: 500px;
     align-self: center;
+  }
+
+  .second-new {
+    margin-top: 55px;
   }
 }
 @media (max-width: 576px) {
@@ -719,12 +723,9 @@ a {
   }
 }
 @media (max-width: 768px) {
-  #page-app {
+  .page-app-image {
     margin-left: 20px;
     margin-right: 20px;
-  }
-
-  .page-app-image {
     margin-bottom: 16px;
   }
 }
