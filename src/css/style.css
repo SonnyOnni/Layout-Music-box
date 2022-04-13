@@ -323,7 +323,7 @@ a {
 }
 
 #page-pricing {
-  width: 1200px;
+  width: 1240px;
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
@@ -334,6 +334,9 @@ a {
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+  gap: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pricing-item {
@@ -343,7 +346,6 @@ a {
   align-items: center;
   width: 370px;
   height: 615px;
-  margin-right: 50px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -513,7 +515,7 @@ a {
 }
 
 #page-news {
-  width: 1200px;
+  width: 1240px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 100px;
@@ -655,11 +657,12 @@ a {
 .page-app {
   display: flex;
   justify-content: center;
-  padding: 100px 0;
+  padding-bottom: 100px;
 }
 
 #page-app {
   width: 1200px;
+  padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
 }
