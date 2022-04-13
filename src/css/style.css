@@ -491,6 +491,14 @@ a {
     font-size: 16px;
     line-height: 24px;
   }
+
+  .pricing-section-title {
+    margin-bottom: 46px;
+  }
+
+  .pricing-section-description {
+    margin-top: 23px;
+  }
 }
 .news-body-first h3::before {
   content: "Music to Be Murdered By";
