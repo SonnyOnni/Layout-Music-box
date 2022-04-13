@@ -111,6 +111,11 @@ a {
       */
 }
 
+#page-description {
+  display: flex;
+  justify-content: center;
+}
+
 .menu-block, .logo-section, .navigation-items {
   display: flex;
   flex-direction: row;
@@ -184,6 +189,11 @@ a {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 1200px;
+}
+
+.strech-item {
+  align-self: stretch;
 }
 
 .header-description {
@@ -227,9 +237,6 @@ a {
   border-radius: 5px;
   padding: 20px 30px;
   cursor: pointer;
-}
-
-.btn-getaccess-title {
   text-transform: uppercase;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
@@ -787,6 +794,8 @@ a {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: max-content;
   justify-content: start;
+  column-gap: 40px;
+  width: 1200px;
 }
 
 .footer-menu {

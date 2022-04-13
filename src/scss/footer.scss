@@ -25,6 +25,9 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: max-content;
     justify-content: start;
+    column-gap: 40px;
+
+    width: 1200px;
 }
 
 .footer-menu {

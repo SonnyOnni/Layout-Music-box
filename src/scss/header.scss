@@ -45,6 +45,10 @@
     */
 }
 
+#page-description {
+    @include flex-center;
+}
+
 .menu-block, .logo-section, .navigation-items {
     @include horizontal-menu;
     @include uppercase;
@@ -116,6 +120,11 @@
 
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 1200px;
+}
+
+.strech-item {
+    align-self: stretch;
 }
 
 .header-description {
@@ -160,9 +169,7 @@
     border-radius: 5px;
     padding: 20px 30px;
     cursor: pointer;
-}
 
-.btn-getaccess-title {
     @include uppercase;
 
     color: $white;
