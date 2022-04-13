@@ -90,6 +90,8 @@ a {
 /*HEADER*/
 /*Desktop version*/
 .header-main-background {
+  display: flex;
+  justify-content: center;
   height: 750px;
   /*
       &::before {
@@ -109,11 +111,6 @@ a {
           content: " ";
       }
       */
-}
-
-#page-description {
-  display: flex;
-  justify-content: center;
 }
 
 .menu-block, .logo-section, .navigation-items {
@@ -777,7 +774,7 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 62px;
-  padding-bottom: 2rem;
+  padding-bottom: 50px;
   position: relative;
 }
 

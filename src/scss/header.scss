@@ -24,6 +24,7 @@
 
 /*Desktop version*/
 .header-main-background {
+    @include flex-center;
     height: 750px;
 /*
     &::before {
@@ -43,10 +44,6 @@
         content: " ";
     }
     */
-}
-
-#page-description {
-    @include flex-center;
 }
 
 .menu-block, .logo-section, .navigation-items {
