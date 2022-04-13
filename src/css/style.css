@@ -869,14 +869,21 @@ a {
   }
 
   .line {
-    top: 650px;
+    top: 700px;
   }
 
+  .footer-menu-bottom {
+    margin-top: 85px;
+  }
   .footer-menu-bottom .footer-menu-items-bottom {
     flex-direction: column;
   }
   .footer-menu-bottom .bottom-item {
     margin-bottom: 16px;
+  }
+
+  .registration-input {
+    height: 50px;
   }
 }
 /*Artist page*/

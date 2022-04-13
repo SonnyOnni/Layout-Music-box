@@ -100,7 +100,7 @@
     .header-main-background {
         height: 853px;
     }
-    
+
     #footer {
         padding-left: 20px;
         padding-right: 20px;
@@ -112,10 +112,12 @@
     }
 
     .line {
-        top: 650px;
+        top: 700px;
     }
 
     .footer-menu-bottom {
+        margin-top: 85px;
+
     & .footer-menu-items-bottom {
         flex-direction: column;
     }
@@ -124,4 +126,8 @@
         margin-bottom: 16px;
     }
     } 
+
+    .registration-input {
+        height: 50px;
+    }
 }
