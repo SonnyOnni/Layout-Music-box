@@ -279,7 +279,7 @@ a {
   }
 
   .main-header {
-    padding-top: 245px;
+    padding-top: 45px;
   }
 
   .registration {
@@ -558,8 +558,8 @@ a {
 h3.new-title {
   text-transform: capitalize;
   margin-bottom: 30px;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   color: #FFFFFF;
 }
