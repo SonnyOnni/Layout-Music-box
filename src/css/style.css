@@ -849,7 +849,7 @@ a {
   }
 
   .footer-menu-bottom {
-    margin-top: 75px;
+    margin-top: 40px;
   }
   .footer-menu-bottom .footer-menu-items-bottom {
     flex-direction: column;
@@ -868,6 +868,14 @@ a {
 
   .footer-menu-title-contact {
     margin-bottom: 10px;
+  }
+
+  .menu-support {
+    margin-bottom: 30px;
+  }
+
+  .menu-social-media {
+    margin-bottom: 75px;
   }
 
   .menu-contacts {
