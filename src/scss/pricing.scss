@@ -61,53 +61,27 @@
     margin-right: 0;
 }
 
-/*
-
-@mixin card-background {
-    position: relative;
-
-    &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    max-height: 750px;
-
-    z-index: -1;
-    border-radius: 1rem;
-
+.bg-free {
+    background-image: url('../images/Free\ Bg.png');
     background-position: center;
     background-size: cover;
-
-    content: " ";
-    }
-}
-
-.bg-free {
-    @include card-background;
-
-    &::before {
-    background-image: url('../images/Free\ Bg.png');
-    }
+    border-radius: 1rem;
 }
 
 .bg-standart {
-    @include card-background;
-
-    &::before {
     background-image: url('../images/Standart\ Bg.png');
-    }
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
 }
 
 .bg-premium {
-    @include card-background;
-
-    &::before {
     background-image: url('../images/Premium\ Bg.png');
-    }
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
 }
-*/
+
 
 .pricing-section-title {
     text-align: center;

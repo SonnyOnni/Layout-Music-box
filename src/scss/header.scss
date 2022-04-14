@@ -26,24 +26,12 @@
 .header-main-background {
     @include flex-center;
     height: 750px;
-/*
-    &::before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 750px;
-    
-        z-index: -1;
-    
+}
+
+.bg-header-image {
         background-image: url('../images/banner\ 1.png');
         background-position: center;
         background-size: cover;
-    
-        content: " ";
-    }
-    */
 }
 
 #page-description {

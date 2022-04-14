@@ -93,24 +93,12 @@ a {
   display: flex;
   justify-content: center;
   height: 750px;
-  /*
-      &::before {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          height: 750px;
+}
 
-          z-index: -1;
-
-          background-image: url('../images/banner\ 1.png');
-          background-position: center;
-          background-size: cover;
-
-          content: " ";
-      }
-      */
+.bg-header-image {
+  background-image: url("../images/banner 1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 #page-description {
@@ -353,53 +341,27 @@ a {
   margin-right: 0;
 }
 
-/*
-
-@mixin card-background {
-    position: relative;
-
-    &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    max-height: 750px;
-
-    z-index: -1;
-    border-radius: 1rem;
-
-    background-position: center;
-    background-size: cover;
-
-    content: " ";
-    }
-}
-
 .bg-free {
-    @include card-background;
-
-    &::before {
-    background-image: url('../images/Free\ Bg.png');
-    }
+  background-image: url("../images/Free Bg.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
 }
 
 .bg-standart {
-    @include card-background;
-
-    &::before {
-    background-image: url('../images/Standart\ Bg.png');
-    }
+  background-image: url("../images/Standart Bg.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
 }
 
 .bg-premium {
-    @include card-background;
-
-    &::before {
-    background-image: url('../images/Premium\ Bg.png');
-    }
+  background-image: url("../images/Premium Bg.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
 }
-*/
+
 .pricing-section-title {
   text-align: center;
   margin-bottom: 48px;
