@@ -57,7 +57,8 @@
     justify-content: space-between;
 }
 
-.new-title {
+h3.new-title {
+    text-transform: capitalize;
     margin-bottom: 30px;
     font-size: 30px;
     line-height: 45px;

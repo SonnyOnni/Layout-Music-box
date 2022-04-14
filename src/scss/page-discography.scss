@@ -31,10 +31,11 @@
 
             color: $white;
 
-            & .discography-name {
+            & h3.discography-name {
                 font-size: 18px;
                 line-height: 27px;
                 font-weight: 700;
+                text-transform: capitalize;
             }
 
             & .discography-year {

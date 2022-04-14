@@ -113,6 +113,11 @@ a {
       */
 }
 
+#page-description {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .menu-block, .logo-section, .navigation-items {
   display: flex;
   flex-direction: row;
@@ -184,8 +189,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   width: 1200px;
 }
 
@@ -552,7 +555,8 @@ a {
   justify-content: space-between;
 }
 
-.new-title {
+h3.new-title {
+  text-transform: capitalize;
   margin-bottom: 30px;
   font-size: 30px;
   line-height: 45px;
@@ -1077,10 +1081,11 @@ a {
 .grid-4 .discography-item .discography-info {
   color: #FFFFFF;
 }
-.grid-4 .discography-item .discography-info .discography-name {
+.grid-4 .discography-item .discography-info h3.discography-name {
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .grid-4 .discography-item .discography-info .discography-year {
   font-size: 16px;
@@ -1143,10 +1148,11 @@ a {
   width: 250px;
   margin-top: 10px;
 }
-.grid-4 .similar-item .similar-info .similar-name {
+.grid-4 .similar-item .similar-info h3.similar-name {
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .grid-4 .similar-item .similar-info .similar-followers {
   font-size: 16px;

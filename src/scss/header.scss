@@ -46,6 +46,11 @@
     */
 }
 
+#page-description {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .menu-block, .logo-section, .navigation-items {
     @include horizontal-menu;
     @include uppercase;
@@ -114,9 +119,6 @@
 
 .main-header {
     @include flex-column-center;
-
-    padding-top: 200px;
-    padding-bottom: 200px;
     width: 1200px;
 }
 
