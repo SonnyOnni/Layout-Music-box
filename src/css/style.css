@@ -1122,6 +1122,10 @@ h3.new-title {
   .grid-4 .discography-item .discography-info .discography-name {
     font-size: 16px;
   }
+
+  .rectrict-height {
+    height: 51px;
+  }
 }
 .page-similar {
   display: flex;
