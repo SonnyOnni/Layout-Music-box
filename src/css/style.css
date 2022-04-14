@@ -632,7 +632,8 @@ h3.new-title {
 }
 /* Mobile Version */
 @media (max-width: 768px) {
-  .new-title {
+  h3.new-title {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -1082,7 +1083,7 @@ h3.new-title {
   color: #FFFFFF;
 }
 .grid-4 .discography-item .discography-info h3.discography-name {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 27px;
   font-weight: 700;
   text-transform: capitalize;
@@ -1125,6 +1126,10 @@ h3.new-title {
 
   .rectrict-height {
     height: 51px;
+  }
+
+  .no-wrap {
+    white-space: nowrap;
   }
 }
 .page-similar {

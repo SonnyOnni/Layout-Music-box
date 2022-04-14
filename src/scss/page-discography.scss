@@ -32,7 +32,7 @@
             color: $white;
 
             & h3.discography-name {
-                font-size: 17px;
+                font-size: 18px;
                 line-height: 27px;
                 font-weight: 700;
                 text-transform: capitalize;
@@ -90,6 +90,10 @@
 
     .rectrict-height {
         height: 51px;
+    }
+
+    .no-wrap {
+        white-space: nowrap;
     }
 }
 
