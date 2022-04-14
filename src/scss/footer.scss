@@ -109,7 +109,7 @@
 
     .footer-menu {
         grid-column: span 6;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
     }
 
     .line {
@@ -130,5 +130,9 @@
 
     .registration-input {
         height: 50px;
+    }
+
+    .social-network {
+        margin-right: 20px;
     }
 }
