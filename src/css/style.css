@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   src: local("Roboto Bold"), local("Roboto-Bold"), url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   src: local("Roboto"), local("Roboto-Regular"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -18,38 +18,45 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #CACACA;
-  background-color: #08020D;
+  color: #cacaca;
+  background-color: #08020d;
   margin: 0;
 }
 
-p, ul, h1, h2, h3, h4, h5, h6 {
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #CACACA;
+  color: #cacaca;
   cursor: pointer;
 }
 
-/*Главный стиль для p*/
+/* Главный стиль для p */
 .main-description {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
-/*Главный стиль для btn*/
+/* Главный стиль для btn */
 .btn-transparent {
-  border: 2px solid #CACACA;
+  border: 2px solid #cacaca;
   border-radius: 3px;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .wrapper {
@@ -63,7 +70,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .desktop-h2 {
@@ -72,7 +79,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 /* Mobile Version */
@@ -87,8 +94,8 @@ a {
     line-height: 27px;
   }
 }
-/*HEADER*/
-/*Desktop version*/
+/* HEADER */
+/* Desktop version */
 .header-main-background {
   display: flex;
   justify-content: center;
@@ -106,12 +113,13 @@ a {
   padding-bottom: 200px;
 }
 
-.menu-block, .logo-section, .navigation-items {
+.menu-block,
+.logo-section,
+.navigation-items {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   flex: 1 1 100px;
-  flex-wrap: wrap;
   font-size: 11px;
   line-height: 16.5px;
   text-transform: uppercase;
@@ -141,7 +149,7 @@ a {
   margin-right: 24px;
 }
 .navigation-item-title:hover {
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -154,10 +162,10 @@ a {
   width: 248px;
   height: 25px;
   padding-left: 10px;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 13px;
   line-height: 15px;
-  background: #3C3B3D;
+  background: #3c3b3d;
   border: none;
   border-radius: 50px;
   display: flex;
@@ -191,10 +199,9 @@ a {
 
 .registration {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   flex: 1 1 131px;
-  flex-wrap: wrap;
   max-width: 570px;
 }
 
@@ -211,7 +218,7 @@ a {
 }
 
 .registration-input::placeholder {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -220,19 +227,19 @@ a {
 .btn-getaccess {
   width: 570px;
   height: 57px;
-  background: #34C176;
+  background: #34c176;
   border: none;
   border-radius: 5px;
   padding: 20px 30px;
   cursor: pointer;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   font-family: Arial, sans-serif;
   font-size: 13px;
   line-height: 15px;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1040px) {
   .logo-section {
     margin-bottom: 16px;
@@ -243,26 +250,30 @@ a {
   }
 }
 @media (max-width: 576px) {
-  .menu-block, .main-header {
+  .menu-block,
+.main-header {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .menu-block, .logo-section, .navigation-items {
+  .menu-block,
+.logo-section,
+.navigation-items {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: flex-start;
     flex: 1 1 100px;
-    flex-wrap: wrap;
     font-size: 11px;
     line-height: 16.5px;
   }
 
   .navigation-item-title {
     font-weight: bold;
+    margin-right: 0;
   }
 
-  .search-button, .search-button-section {
+  .search-button,
+.search-button-section {
     width: 100%;
   }
 
@@ -275,7 +286,8 @@ a {
     width: 100%;
   }
 
-  .registration-input, .btn-getaccess {
+  .registration-input,
+.btn-getaccess {
     width: 100%;
   }
 
@@ -283,28 +295,27 @@ a {
     margin-top: 16px;
     margin-bottom: 16px;
   }
-
-  .navigation-item-title {
-    margin-right: 0;
-  }
 }
 .pricing-value {
-  line-height: 1em;
   font-size: 64px;
   line-height: 100%;
-  color: #FFFFFF;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  text-align: center;
 }
 
 .pricing-footer {
   text-align: center;
   font-size: 12.8px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 64px;
   height: 57px;
 }
 
-/*Pricing Section*/
+/* Pricing Section */
 .page-pricing {
   display: flex;
   justify-content: center;
@@ -319,9 +330,8 @@ a {
 
 .pricing-items {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
-  flex-wrap: nowrap;
   gap: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -378,14 +388,7 @@ a {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #FFFFFF;
-  align-self: stretch;
-  text-align: center;
-}
-
-.pricing-value {
-  display: flex;
-  justify-content: center;
+  color: #fff;
   align-self: stretch;
   text-align: center;
 }
@@ -394,7 +397,7 @@ a {
   text-transform: uppercase;
   font-size: 32px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #fff;
   margin-left: 16px;
 }
 
@@ -410,7 +413,7 @@ a {
   padding: 20px 30px;
 }
 
-/*Laptop version*/
+/* Laptop version */
 @media (max-width: 1240px) {
   .pricing-items {
     flex-wrap: wrap;
@@ -420,7 +423,7 @@ a {
     margin-bottom: 0;
   }
 }
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1050px) {
   .pricing-items {
     display: flex;
@@ -460,20 +463,6 @@ a {
     margin-top: 25px;
   }
 }
-.news-body-first h3::before {
-  content: "Music to Be Murdered By";
-}
-.news-body-first p::before {
-  content: "Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.";
-}
-
-.news-body-second h3::before {
-  content: "Ordinary Man";
-}
-.news-body-second p::before {
-  content: "Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box";
-}
-
 .page-news {
   display: flex;
   justify-content: center;
@@ -492,10 +481,9 @@ a {
 
 .news-item {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   flex: 1 1 1200px;
-  flex-wrap: nowrap;
 }
 
 .first-new-post {
@@ -522,13 +510,13 @@ h3.new-title {
   font-size: 30px;
   line-height: 45px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .new-post-description {
   margin-bottom: 24px;
   text-align: start;
-  color: #CACACA;
+  color: #cacaca;
 }
 
 .news-footer {
@@ -537,8 +525,7 @@ h3.new-title {
 
 .news-author {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   margin-bottom: 64px;
 }
 
@@ -547,7 +534,7 @@ h3.new-title {
   margin-left: 16px;
   font-size: 12px;
   line-height: 19px;
-  color: #F89202;
+  color: #f89202;
 }
 
 .new-post-date {
@@ -566,11 +553,10 @@ h3.new-title {
   text-align: center;
 }
 
-/*Laptop version*/
+/* Laptop version */
 @media (max-width: 1240px) {
   .news-item {
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
 
   .second-new {
@@ -583,11 +569,13 @@ h3.new-title {
     margin-bottom: 50px;
   }
 
-  .first-new-post, .second-new-post {
+  .first-new-post,
+.second-new-post {
     margin: 0;
   }
 
-  .new-title, .new-post-description {
+  .new-title,
+.new-post-description {
     margin-bottom: 16px;
   }
 }
@@ -640,10 +628,9 @@ h3.new-title {
 
 .page-app-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   flex: 1 1 1200px;
-  flex-wrap: nowrap;
 }
 
 .page-app-items {
@@ -662,12 +649,12 @@ h3.new-title {
   padding: 16px 40px;
   width: 131px;
   height: 53px;
-  background: #95390C;
+  background: #95390c;
   border: none;
   border-radius: 32px;
   text-align: center;
   font-size: 12.8px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .page-app-image {
@@ -675,7 +662,7 @@ h3.new-title {
   height: 278px;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1050px) {
   .page-app-wrapper {
     flex-direction: column-reverse;
@@ -724,7 +711,7 @@ h3.new-title {
   top: 272px;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid #CACACA;
+  border-bottom: 1px solid #cacaca;
 }
 
 .footer-wrapper {
@@ -773,14 +760,14 @@ h3.new-title {
 .footer-menu-item a {
   font-size: 16px;
   line-height: 24px;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .social-network {
   margin-right: 24px;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1050px) {
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
@@ -848,7 +835,7 @@ h3.new-title {
     margin-bottom: 30px;
   }
 }
-/*Artist page*/
+/* Artist page */
 .header-artist-background {
   height: 713px;
   padding: 200px 120px;
@@ -886,7 +873,7 @@ h3.new-title {
   text-transform: uppercase;
   font-size: 12.8px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -897,13 +884,13 @@ h3.new-title {
   border: none;
 }
 .artist-header .btn-section .btn-purple {
-  background-color: #5328A1;
+  background-color: #5328a1;
 }
 .artist-header .btn-section .btn-red {
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 768px) {
   .artist-header .btn-section {
     flex-direction: column;
@@ -977,18 +964,19 @@ h3.new-title {
   text-transform: uppercase;
   font-weight: 700;
 }
-.popular-track-section .track-info .track-title .track-song-name, .popular-track-section .track-info .track-title .track-song-artist {
+.popular-track-section .track-info .track-title .track-song-name,
+.popular-track-section .track-info .track-title .track-song-artist {
   font-size: 12.8px;
   line-height: 19.2px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .popular-track-section .track-info .track-song-time {
   font-size: 12.8px;
   line-height: 150%;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1240px) {
   #page-popular-track {
     padding-left: 20px;
@@ -1029,7 +1017,7 @@ h3.new-title {
   margin-bottom: 18px;
 }
 .grid-4 .discography-item .discography-info {
-  color: #FFFFFF;
+  color: #fff;
 }
 .grid-4 .discography-item .discography-info h3.discography-name {
   font-size: 18px;
@@ -1042,7 +1030,7 @@ h3.new-title {
   line-height: 24px;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1240px) {
   .grid-4 {
     grid-template-areas: "album album album" "album album album";
@@ -1100,7 +1088,7 @@ h3.new-title {
 .grid-4 .similar-item {
   grid-area: "album";
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 .grid-4 .similar-item .similar-info {
   width: 250px;
@@ -1117,7 +1105,7 @@ h3.new-title {
   line-height: 150%;
 }
 
-/*Mobile version*/
+/* Mobile version */
 @media (max-width: 1240px) {
   #page-similar {
     padding-left: 20px;

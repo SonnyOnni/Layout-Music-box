@@ -1,14 +1,14 @@
-@import 'variables.scss';
-@import 'general.scss';
-@import 'header.scss';
-@import 'pricing.scss';
-@import 'news.scss';
-@import 'page-app.scss';
-@import 'footer.scss';
+@import "variables";
+@import "general";
+@import "header";
+@import "pricing";
+@import "news";
+@import "page-app";
+@import "footer";
 
-/*Artist page*/
+/* Artist page */
 
-@import 'header-artist.scss';
-@import 'popular-track.scss';
-@import 'page-discography.scss';
-@import 'page-similar.scss';
+@import "header-artist";
+@import "popular-track";
+@import "page-discography";
+@import "page-similar";

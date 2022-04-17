@@ -1,176 +1,152 @@
-@mixin news-item ($new-title, $text) {
-        & h3::before {
-          content: "#{$new-title}"; 
-        }
-
-        & p::before {
-            content: "#{$text}";
-        }
-}
-
-.news-body-first {
-    @include news-item ("Music to Be Murdered By", "Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.")
-}
-
-.news-body-second {
-    @include news-item ("Ordinary Man", "Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box")
-}
-
 .page-news {
-    @include flex-center;
+  @include flex-center;
 }
 
 #page-news {
-    width: 1240px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 100px;
+  width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
 }
 
 .main-news-title {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .news-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 1 1 1200px;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex: 1 1 1200px;
 }
 
 .first-new-post {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .second-new-post {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .second-new {
-    margin-top: 65px;
+  margin-top: 65px;
 }
 
 .new-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h3.new-title {
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 400;
-
-    color: $white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  color: $white;
 }
 
 .new-post-description {
-    margin-bottom: 24px;
-    text-align: start;
-
-    color: $dark-gray;
+  margin-bottom: 24px;
+  text-align: start;
+  color: $dark-gray;
 }
 
 .news-footer {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .news-author {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    margin-bottom: 64px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 64px;
 }
 
 .news-author-name {
-    @include uppercase;
+  @include uppercase;
 
-    margin-left: 16px;
-    font-size: 12px;
-    line-height: 19px;
-    color: $orange;
+  margin-left: 16px;
+  font-size: 12px;
+  line-height: 19px;
+  color: $orange;
 }
 
 .new-post-date {
-    margin-left: 16px;
-    font-size: 12px;
-    line-height: 19px;
+  margin-left: 16px;
+  font-size: 12px;
+  line-height: 19px;
 }
 
 .btn-album {
-    @include uppercase;
+  @include uppercase;
 
-    width: 135px;
-    height: 53px;
-    padding: 16px 30px;
-    font-size: 12px;
-    line-height: 19px;
-    text-align: center;
+  width: 135px;
+  height: 53px;
+  padding: 16px 30px;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
 }
 
-/*Laptop version*/ 
+/* Laptop version */
 
 @media (max-width: 1240px) {
-    .news-item {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+  .news-item {
+    flex-flow: column wrap;
+  }
 
-    .second-new {
-        flex-direction: column-reverse;
-    }
+  .second-new {
+    flex-direction: column-reverse;
+  }
 
-    .news-picture {
-        max-width: 575px;
-        height: auto;
-        margin-bottom: 50px;
-    }
+  .news-picture {
+    max-width: 575px;
+    height: auto;
+    margin-bottom: 50px;
+  }
 
-    .first-new-post, .second-new-post {
-        margin: 0;
-    }
+  .first-new-post,
+  .second-new-post {
+    margin: 0;
+  }
 
-    .new-title, .new-post-description {
-        margin-bottom: 16px;
-    }
+  .new-title,
+  .new-post-description {
+    margin-bottom: 16px;
+  }
 }
 
-/* Mobile Version */ 
+/* Mobile Version */
 
 @media (max-width: 768px) {
+  h3.new-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
 
-    h3.new-title {
-        margin-bottom: 16px;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
-        text-transform: capitalize;
-    }
+  .news-picture {
+    max-width: 500px;
+    align-self: center;
+  }
 
-    .news-picture {
-        max-width: 500px;
-        align-self: center;
-    }
-
-    .second-new {
-        margin-top: 55px;
-    }
-
+  .second-new {
+    margin-top: 55px;
+  }
 }
 
 @media (max-width: 576px) {
-    .news-picture {
-        max-width: 374px;
-        align-self: center;
-    }
+  .news-picture {
+    max-width: 374px;
+    align-self: center;
+  }
 }
 
 @media (max-width: 400px) {
-    .news-picture {
-        max-width: 300px;
-    }
+  .news-picture {
+    max-width: 300px;
+  }
 }
