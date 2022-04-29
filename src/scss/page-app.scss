@@ -84,3 +84,21 @@
     height: 92px;
   }
 }
+
+@media (max-width: 400px) {
+  .page-app-description {
+    width: 300px;
+    height: auto;
+  }
+
+  .page-app-items {
+    width: 320px;
+  }
+
+  .page-app-image {
+    margin-right: 0;
+    margin-left: 0;
+    width: 320px;
+    height: auto;
+  }
+}

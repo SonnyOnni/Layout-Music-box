@@ -694,6 +694,23 @@ h3.new-title {
     height: 92px;
   }
 }
+@media (max-width: 400px) {
+  .page-app-description {
+    width: 300px;
+    height: auto;
+  }
+
+  .page-app-items {
+    width: 320px;
+  }
+
+  .page-app-image {
+    margin-right: 0;
+    margin-left: 0;
+    width: 320px;
+    height: auto;
+  }
+}
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -1134,6 +1151,11 @@ h3.new-title {
   .grid-4 .similar-item .similar-info .similar-followers {
     width: 137px;
     height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  .grid-4 {
+    padding-right: 0;
   }
 }
 
