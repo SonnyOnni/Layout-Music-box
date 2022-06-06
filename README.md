@@ -1,5 +1,5 @@
-# Layout-Music-box
+# Music-box
 
-Home Page: https://sonnyonni.github.io/layout-designer-project-lvl2/src/
+Home Page: https://sonnyonni.github.io/layout-music-box/src/
 
-Artist Page: https://sonnyonni.github.io/layout-designer-project-lvl2/src/artist.html
+Artist Page: https://sonnyonni.github.io/layout-music-box/src/artist.html
